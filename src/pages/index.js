@@ -62,6 +62,7 @@ function addBackground(target){
     cell_size: Math.random()*200 + 40,
   });
 
+  //Confirmed that this isn't going to work
   target.style['background-image'] = 'url(' + pattern.png() + ')';
 }
 
