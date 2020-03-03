@@ -1,21 +1,65 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import PostLink from "../components/post-link"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+import "../styles/reset.scss"
+import "../styles/helpers.scss"
+import "../styles/index.scss"
+
+
+const IndexPage = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+
+  //todo: list all posts on index.js
+  const Posts = edges
+                .filter(edge => !!edge.node.frontmatter.date)
+                .map(edge => <PostLink key={edge.node.id} post={edge.node}/>)
+  return(
+    <Layout>
+      <main>        
+        <div className="container header-container">
+          <section className="header-section">
+            <p className="intro">
+              <span className="intro-emphasis">
+                Hi, I'm Joshua 
+              </span>
+              &nbsp; and this is my website. I'll use this space to talk about javascript, video games, and books that I'm reading. 
+            </p>
+            <p className="intro mt-3">
+              This website is built using <a className="intro-links" href="https://www.gatsbyjs.org/">GatsbyJS</a>. You can view the source code <a className="intro-links" href="#">here.</a>
+            </p>
+          </section>
+        </div>
+        <div className="container">
+          <section id="post-container">
+            {Posts}
+          </section>
+        </div>
+      </main>
+    </Layout>
+  )
+}
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+          }
+        }
+      }
+    }
+  }
+`

@@ -1,0 +1,94 @@
+/*Header*/
+
+.header-section{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+@media (min-width:900px){
+    .header-section{
+        height:300px;
+    }
+}
+
+.intro{
+    font-family: 'Montserrat', sans-serif;
+    color:#34434B;
+    background:#FCFCF4;
+    padding: 13px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 1px 3px 0px rgba(0,0,0,.12);
+}
+
+@media (min-width:900px){
+    .intro{
+        margin-left:3em;
+        margin-right:3em;
+    }
+}
+
+.intro-emphasis{
+    font-size:2.25rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro-links{
+    text-decoration: none;
+    color:#8C1616;
+}
+
+/*Posts*/
+#post-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 155px);
+    padding-top:35px;
+}
+
+@media (min-width:900px){
+    #post-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 155px);
+    }
+}
+
+@media (min-width:1300px){
+    #post-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 155px);
+    }
+}
+
+.post-title{
+    font-family: 'Roboto', sans-serif;
+    color:#8C1616;
+    font-size:2rem;
+}
+
+.post-date{
+    font-family: 'Roboto', sans-serif;
+    color:#34434B;
+    font-size:1.25rem;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+.post-description{
+    font-family: 'Montserrat', sans-serif;
+    color:#34434B;
+    font-size:1rem;
+}
+
+.post-link{
+    font-family: 'Montserrat', sans-serif;
+    color:#8C1616;
+    text-decoration: none;
+    display: block;
+    margin-top:5px;
+}
+
