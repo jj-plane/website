@@ -7,6 +7,7 @@ import "../styles/reset.scss"
 import "../styles/helpers.scss"
 import "../styles/index.scss"
 
+import Trianglify from "trianglify"
 
 const IndexPage = ({
   data: {
@@ -18,6 +19,8 @@ const IndexPage = ({
   const Posts = edges
                 .filter(edge => !!edge.node.frontmatter.date)
                 .map(edge => <PostLink key={edge.node.id} post={edge.node}/>)
+
+
   return(
     <Layout>
       <main>        
@@ -43,6 +46,24 @@ const IndexPage = ({
     </Layout>
   )
 }
+
+//Trianglify stuff
+const header_section = document.querySelector('.header-container');
+console.log(header_section);
+
+function addBackground(target){
+  const dimensions = target.getClientRects()[0];
+  const pattern = Trianglify({
+    width: dimensions.width,
+    height: dimensions.height,
+    x_colors: ['#FFFFFF', '#8C1616'],
+    cell_size: Math.random()*200 + 40,
+  });
+
+  target.style['background-image'] = 'url(' + pattern.png() + ')';
+}
+
+addBackground(header_section);
 
 export default IndexPage
 
