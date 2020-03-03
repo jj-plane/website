@@ -7,7 +7,7 @@ import "../styles/reset.scss"
 import "../styles/helpers.scss"
 import "../styles/index.scss"
 
-import Trianglify from "trianglify"
+//import Trianglify from "trianglify"
 
 const IndexPage = ({
   data: {
