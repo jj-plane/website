@@ -48,6 +48,8 @@ const IndexPage = ({
 }
 
 //Trianglify stuff
+
+/*
 const header_section = document.querySelector('.header-container');
 console.log(header_section);
 
@@ -64,6 +66,8 @@ function addBackground(target){
 }
 
 addBackground(header_section);
+
+*/
 
 export default IndexPage
 
