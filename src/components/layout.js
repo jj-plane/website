@@ -1,13 +1,13 @@
 import React from "react"
 
-import Header from "./header"
+import Navbar from "./navbar"
 
 import "../styles/global.scss"
 
 const Layout = ({ children }) => {
     return(
         <>
-            <Header></Header>
+            <Navbar></Navbar>
             {children}
         </>
     )

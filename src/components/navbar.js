@@ -2,9 +2,9 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import "../styles/header.scss";
+import "../styles/navbar.scss";
 
-const Header = () => {
+const Navbar = () => {
     return(
       <nav>
         <ul id="main-navbar">
@@ -23,12 +23,12 @@ const Header = () => {
 }
 
 
-Header.propTypes = {
+Navbar.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+Navbar.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Navbar

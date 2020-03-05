@@ -7,8 +7,6 @@ import "../styles/reset.scss"
 import "../styles/helpers.scss"
 import "../styles/index.scss"
 
-//import Trianglify from "trianglify"
-
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges },
@@ -31,10 +29,9 @@ const IndexPage = ({
                 Hi, I'm Joshua 
               </span>
               &nbsp; and this is my website. I'll use this space to talk about javascript, video games, and books that I'm reading. 
+              This website is built using <a className="intro-links" href="https://www.gatsbyjs.org/">GatsbyJS</a>. You can view the source code <a className="intro-links" href="#">here.</a>&nbsp;The illustrations are altered versions of <a href="https://undraw.co/" className="intro-links">Undraw</a>
             </p>
-            <p className="intro mt-3">
-              This website is built using <a className="intro-links" href="https://www.gatsbyjs.org/">GatsbyJS</a>. You can view the source code <a className="intro-links" href="#">here.</a>
-            </p>
+            <img src="../images/index_illustration_export.svg"></img>
           </section>
         </div>
         <div className="container">
@@ -47,28 +44,6 @@ const IndexPage = ({
   )
 }
 
-//Trianglify stuff
-
-/*
-const header_section = document.querySelector('.header-container');
-console.log(header_section);
-
-function addBackground(target){
-  const dimensions = target.getClientRects()[0];
-  const pattern = Trianglify({
-    width: dimensions.width,
-    height: dimensions.height,
-    x_colors: ['#FFFFFF', '#8C1616'],
-    cell_size: Math.random()*200 + 40,
-  });
-
-  //Confirmed that this isn't going to work
-  target.style['background-image'] = 'url(' + pattern.png() + ')';
-}
-
-addBackground(header_section);
-
-*/
 
 export default IndexPage
 
