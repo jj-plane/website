@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import PostLink from "../components/post-link"
+import SEO from "../components/seo"
 
 import icon from "../images/index_illustration_export.svg"
 
@@ -23,6 +24,7 @@ const IndexPage = ({
 
   return(
     <Layout>
+      <SEO title="Home" />
       <main>        
         <div className="container header-container">
           <section className="header-section">
@@ -33,7 +35,7 @@ const IndexPage = ({
               &nbsp; and this is my website. I'll use this space to talk about javascript, video games, and books that I'm reading. 
               This website is built using <a className="intro-links" href="https://www.gatsbyjs.org/">GatsbyJS</a>. You can view the source code <a className="intro-links" href="#">here.</a>&nbsp;The illustrations are altered versions of <a href="https://undraw.co/" className="intro-links">Undraw</a>
             </p>
-            <img src={icon} height="250"></img>
+            <img src={icon} height="250" alt="Illustration of me at my desk coding"></img>
           </section>
         </div>
         <div className="container">

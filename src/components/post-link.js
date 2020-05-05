@@ -3,11 +3,10 @@ import { Link } from "gatsby"
 
 const PostLink = ({ post }) => (
     <article>
-        <h3 className="post-title">{post.frontmatter.title}</h3>
-        <h4 className="post-date">{post.frontmatter.date}</h4>
         <Link className="post-link" to={post.frontmatter.path}>
-            Read More
+            <h3 className="post-title">{post.frontmatter.title}</h3>
         </Link>
+        <h4 className="post-date">{post.frontmatter.date}</h4>
     </article>
 )
 
