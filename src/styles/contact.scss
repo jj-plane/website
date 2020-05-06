@@ -1,0 +1,92 @@
+.form-area{
+    padding-bottom:85px;
+    padding-top:25px;
+}
+
+#contact-header{
+    font-family: 'Roboto', sans-serif;
+    font-size:2rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color:#34434B;
+}
+
+.contact-subline{
+    text-align: center;
+    margin-bottom: 25px;
+    color:#34434B;
+}
+
+.contact-links{
+    color:#8C1616;
+    text-decoration: none;
+}
+
+.contact-links:hover{
+    text-decoration: underline;
+}
+
+form{
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group > label{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:5px;
+    color:#34434B;
+}
+
+.form-group > input{
+    border: 1px solid #ced4da;
+    border-radius:.25rem;
+    padding: .375rem .75rem;
+    width:100%;
+    outline: none;
+}
+
+.form-group > input:focus{
+    box-shadow: 0 0 0 .2rem rgba(140, 22, 22, .45);
+    border: 1px solid #8C1616;
+    outline: none;
+}
+
+.form-group > textarea{
+    border: 1px solid #ced4da;
+    border-radius:.25rem;
+    padding: .375rem .75rem;
+    width:100%;
+    outline: none;
+}
+
+.form-group > textarea:focus{
+    box-shadow: 0 0 0 .2rem rgba(140, 22, 22, .45);
+    border: 1px solid #8C1616;
+    outline: none;
+}
+
+.submit-group{
+    text-align: center;
+}
+
+.form-submit{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    background:#8C1616;
+    border:1px solid #7e1313;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.form-submit:hover{
+    cursor: pointer;
+    background:#7e1313;
+}

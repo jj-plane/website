@@ -1,15 +1,36 @@
 import React from "react"
 
+import "../styles/contact.scss" 
+
 const Contact = () => {
     return(
-        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-            <input type="hidden" data-netlify="true" value="contact" name="contact" />
-            
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="name" />
+        <div className="container form-area" id="form-container">
+            <h2 id="contact-header">Get in Touch</h2>
+            <p className="contact-subline">The best way to reach me is on <a className="contact-links" href="https://twitter.com/JJAggas">Twitter</a> , but if you really prefer you can send me a message</p>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <input type="hidden" data-netlify="true" value="contact" name="contact" />
+                
+                <div className="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" />
+                </div>
 
-            <button type="submit">Let's Chat</button>
-        </form>
+                <div className="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" />
+                </div>
+
+                <div className="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>        
+                </div>
+
+                <div className="submit-group">
+                    <button type="submit" className="form-submit">Let's Chat</button>
+                </div>
+
+            </form>
+        </div>
     )
 }
 
