@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import PostLink from "../components/post-link"
 import SEO from "../components/seo"
+import Contact from "../components/contact"
 
 import icon from "../images/index_illustration_export.svg"
 
@@ -10,11 +11,7 @@ import "../styles/reset.scss"
 import "../styles/helpers.scss"
 import "../styles/index.scss"
 
-const IndexPage = ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => {
+const IndexPage = ({data: {allMarkdownRemark: { edges },},}) => {
 
   //todo: list all posts on index.js
   const Posts = edges
@@ -43,6 +40,9 @@ const IndexPage = ({
             {Posts}
           </section>
         </div>
+        <div className="container">
+          <Contact></Contact>
+        </div>
       </main>
     </Layout>
   )
@@ -53,7 +53,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 6) {
       edges {
         node {
           id
