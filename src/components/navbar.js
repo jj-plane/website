@@ -2,7 +2,9 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import "../styles/navbar.scss";
+import "../styles/navbar.scss"
+
+import TwitterIcon from "../images/twitter-icon.svg"
 
 const Navbar = () => {
     return(
@@ -12,10 +14,9 @@ const Navbar = () => {
               <Link to="/">Joshua</Link>
             </li>
             <li className="ml-a">
-              <Link to="/all-posts/">All Posts</Link>
-            </li>
-            <li className="ml-3">
-              <Link to="/">Contact Me</Link>
+              <a href="https://twitter.com/JJAggas">
+                <img src={TwitterIcon} height="25" width="25" alt="twitter"></img>
+              </a>
             </li>
         </ul>
       </nav>

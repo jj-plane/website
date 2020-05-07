@@ -13,8 +13,8 @@ export default function Post({
     return(
       <Layout>
         <main className="post-main">
-          <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
+          <h1 className="post-title">{frontmatter.title}</h1>
+          <h2 className="post-date">{frontmatter.date}</h2>
           <div dangerouslySetInnerHTML={{__html: html}}></div>
         </main>
       </Layout>

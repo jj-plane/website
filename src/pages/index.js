@@ -35,8 +35,9 @@ const IndexPage = ({data: {allMarkdownRemark: { edges },},}) => {
             <img src={icon} height="250" alt="Illustration of me at my desk coding"></img>
           </section>
         </div>
-        <div className="container">
-          <section id="post-container">
+        <div className="container post-container">
+          <h2 className="post-container-header">Posts</h2>
+          <section id="post-repeater">
             {Posts}
           </section>
         </div>

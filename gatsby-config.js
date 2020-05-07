@@ -10,7 +10,7 @@ module.exports = {
       options: {
         fonts: [
           `Montserrat`,
-          `Roboto\:700` // you can also specify font weights and styles
+          `Roboto\:400,700` // you can also specify font weights and styles
         ],
         display: 'swap'
       }
