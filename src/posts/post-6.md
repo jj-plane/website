@@ -6,3 +6,5 @@ title: "My last blog post"
 
 
 This is the last example
+
+![](../images/gatsby-icon.png)
