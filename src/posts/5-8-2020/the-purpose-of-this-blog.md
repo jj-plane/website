@@ -19,7 +19,7 @@ My name is Joshua. I’ve been a professional web developer since 2013. I gradua
 While this website will mainly be for my own growth, I also hope to document my insights about javascript in ways that others will find helpful. There are countless tutorials about learning front end web development, but I feel that some writing styles can convey their ideas better than others. If a single post I write helps a single developer who’s struggling with a problem, I’ll be ecstatic.
 
 <br />
-<h1 class="post-header">How as this site built?</h1>
+<h1 class="post-header">How was this site built?</h1>
 
 This website is a static website that utilizes the Gatsby framework. I choose Gatsby for a very specific reason: performance. Static websites built using Gatsby are [fast](https://www.gatsbyjs.org/blog/2017-09-13-why-is-gatsby-so-fast/) and speed is critical to keep your audience happy.
 
