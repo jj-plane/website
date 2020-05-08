@@ -5,20 +5,16 @@ import PostLink from "../components/post-link"
 import SEO from "../components/seo"
 import Contact from "../components/contact"
 
+import { graphql } from "gatsby"
+
 import icon from "../images/index_illustration_export.svg"
 
 import "../styles/reset.scss"
 import "../styles/helpers.scss"
 import "../styles/index.scss"
 
-const IndexPage = ({data: {allMarkdownRemark: { edges },},}) => {
-
-  //todo: list all posts on index.js
-  const Posts = edges
-                .filter(edge => !!edge.node.frontmatter.date)
-                .map(edge => <PostLink key={edge.node.id} post={edge.node}/>)
-
-
+const IndexPage = ({data: {allMarkdownRemark: {edges}}}) => {
+  const Posts = edges.filter(edge => !!edge.node.frontmatter.date).map(edge => <PostLink key={edge.node.id} post={edge.node}></PostLink>)
   return(
     <Layout>
       <SEO title="Home" />
@@ -47,23 +43,22 @@ const IndexPage = ({data: {allMarkdownRemark: { edges },},}) => {
   )
 }
 
-
 export default IndexPage
 
-export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 6) {
+export const PageQuery = graphql`
+  query getHomepageData{
+    allMarkdownRemark(sort: {fields: id, order: DESC}) {
       edges {
         node {
-          id
-          excerpt(pruneLength: 250)
+          fields {
+            slug
+          }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
+            date
             title
           }
         }
       }
-    }
+    }  
   }
 `
