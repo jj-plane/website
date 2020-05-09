@@ -58,36 +58,10 @@
     color: #34434B;
 }
 
-/*Posts
-#post-container{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 155px);
-    padding-top:35px;
-}
-
-
-@media (min-width:900px){
-    #post-container{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 155px);
-    }
-}
-
-@media (min-width:1300px){
-    #post-container{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 155px);
-    }
-}
-*/
-
 #post-repeater{
     display:grid;
     grid-auto-rows:auto;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
     grid-gap:1rem;
 }
 
