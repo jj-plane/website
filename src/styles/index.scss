@@ -1,93 +1,21 @@
-/*Header*/
-.header-section{
-    height:auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top:15px;
-    padding-bottom:15px;
-    
+.blue-heading{
+    color:#C775DF;
 }
 
-@media (min-width:900px){
-    .header-section{
-        height:400px;
-    }
-}
-
-.intro{
-    font-family: 'Montserrat', sans-serif;
-    color:#34434B;
-    
-    padding: 13px;
-
-}
-
-@media (min-width:900px){
-    .intro{
-        margin-left:3em;
-        margin-right:3em;
-    }
-}
-
-.intro-emphasis{
-    font-size:2.25rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-.intro-links{
-    text-decoration: none;
-    color:#8C1616;
-}
-
-
-.post-container{
-    padding-top:50px;
-    padding-bottom:50px;
-}
-
-.post-container-header{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 25px;
-    color: #34434B;
-}
-
-#post-repeater{
-    display:grid;
-    grid-auto-rows:auto;
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-    grid-gap:1rem;
+article{
+    margin-top:15px;
 }
 
 .post-title{
-    font-family: 'Roboto', sans-serif;
-    color:#8C1616;
-    font-size:2rem;
-    text-align: center;
+    font-size:1.5rem;
+    margin-bottom:.5rem;
 }
 
 .post-date{
-    font-family: 'Roboto', sans-serif;
-    color:#34434B;
-    font-size:1.25rem;
     margin-top:5px;
-    margin-bottom:15px;
-    text-align:center;
+    font-size:.85rem;
 }
 
-.post-description{
-    font-family: 'Montserrat', sans-serif;
-    color:#34434B;
-    font-size:1rem;
+#contact-header{
+    margin-bottom:.5rem;
 }
-
-.post-link{
-    font-family: 'Montserrat', sans-serif;
-    color:#8C1616;
-    text-decoration: none;
-    display: block;
-    margin-top:5px;
-}
-

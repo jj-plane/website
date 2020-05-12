@@ -4,7 +4,7 @@ import React from "react"
 
 import "../styles/navbar.scss"
 
-import TwitterIcon from "../images/twitter-icon.svg"
+import TwitterIcon from "../images/twitter-icon-green.svg"
 
 const Navbar = () => {
     return(

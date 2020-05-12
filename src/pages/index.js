@@ -7,7 +7,6 @@ import Contact from "../components/contact"
 
 import { graphql } from "gatsby"
 
-import icon from "../images/index_illustration_export.svg"
 
 import "../styles/reset.scss"
 import "../styles/helpers.scss"
@@ -28,11 +27,9 @@ const IndexPage = ({data: {allMarkdownRemark: {edges}}}) => {
               &nbsp; and this is my website. I'll use this space to talk about javascript, video games, and books that I'm reading. 
               This website is built using <a className="intro-links" href="https://www.gatsbyjs.org/">GatsbyJS</a>. You can view the source code <a className="intro-links" href="https://github.com/jj-plane/website">here.</a>&nbsp;The illustrations are altered versions of <a href="https://undraw.co/" className="intro-links">Undraw</a>.
             </p>
-            <img src={icon} height="250" alt="Illustration of me at my desk coding"></img>
           </section>
         </div>
         <div className="container post-container">
-          <h2 className="post-container-header">Posts</h2>
           <section id="post-repeater">
             {Posts}
           </section>
