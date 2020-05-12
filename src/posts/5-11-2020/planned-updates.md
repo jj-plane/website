@@ -15,4 +15,5 @@ date: "2020-05-11"
     <li>Create a favicon instead of using default Gatsby favicon</li>
     <li>Create a search functionality</li>
     <li>Create a Contact Form (This one really depends on whether there is any demand. I’m currently on the free Netlify plan and unless there’s a good reason to change, I’d like to keep it that way.)</li>
+    <li>Add a 'read time' metric to posts</li>
 </ul>

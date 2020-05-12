@@ -5,15 +5,34 @@ body{
 p{
     color:#A3AAB8;
     font-family: 'Roboto', sans-serif;
-    line-height: 130%;
+    line-height: 135%;
 }
+
+h1, h2, h3, h4{
+    font-family: 'Roboto', sans-serif;
+    color:#A3AAB8;
+}
+
 
 a{
     color:#97C475;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 main{
     max-width: 42rem;
     margin-left:auto;
     margin-right:auto;
+}
+
+.large-heading{
+    font-size:2rem;
+}
+
+.medium-heading{
+    font-size:1.5rem;
 }

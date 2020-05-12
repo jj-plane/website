@@ -30,7 +30,6 @@ const IndexPage = ({data: {allMarkdownRemark: {edges}}}) => {
           </section>
         </div>
         <div className="container post-container">
-          <h2 className="post-container-header">Posts</h2>
           <section id="post-repeater">
             {Posts}
           </section>
