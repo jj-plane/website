@@ -2,28 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
-    background:url('../images/grid-pattern.png');
-}
-
-p{
-    line-height: 140%;
-    font-family: 'Roboto', sans-serif;
-}
-
-/*Colors*/
-.main-red{
-    color:#8C1616;
-}
-
-.main-grey{
-    color:#34434B;
-}
-
-.faded-grey{
-    color:#686868;
-}
-
 /*Structure*/
 .container{
     padding:15px;
