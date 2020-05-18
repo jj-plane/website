@@ -16,7 +16,7 @@ export default function Post({
         <SEO title={`${frontmatter.title} | ${frontmatter.date}`}></SEO>
         <main className="post-main">
           <h1 className="post-title">{frontmatter.title}</h1>
-          <h2 className="post-date">{frontmatter.date}</h2>
+          <h2 className="post-date">{frontmatter.date} | {frontmatter.readtime} minute(s)</h2>
           <div dangerouslySetInnerHTML={{__html: html}}></div>
         </main>
       </Layout>
@@ -30,6 +30,7 @@ export const query = graphql`
       frontmatter{
         date(formatString: "MMMM DD, YYYY")
         title
+        readtime
       }
     }
   }

@@ -1,6 +1,7 @@
 ---
 title: "The Purpose of This Blog"
 date: "2020-05-08"
+readtime: 1
 ---
 
 

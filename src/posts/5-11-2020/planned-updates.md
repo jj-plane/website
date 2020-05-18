@@ -1,6 +1,7 @@
 ---
 title: "Planned Updates"
 date: "2020-05-11"
+readtime: 1
 ---
 
 <p>This website is very simple because it is important for me to just get something online. As these updates are made I’ll scratch them off this list. These aren’t in any particularorder; I’ll work on them as I feel motivated.</p>
@@ -15,5 +16,5 @@ date: "2020-05-11"
     <li>Create a favicon instead of using default Gatsby favicon</li>
     <li>Create a search functionality</li>
     <li>Create a Contact Form (This one really depends on whether there is any demand. I’m currently on the free Netlify plan and unless there’s a good reason to change, I’d like to keep it that way.)</li>
-    <li>Add a 'read time' metric to posts</li>
+    <li><s>Add a 'read time' metric to posts</s></li>
 </ul>
