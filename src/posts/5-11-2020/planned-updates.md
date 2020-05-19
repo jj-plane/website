@@ -4,7 +4,7 @@ date: "2020-05-11"
 readtime: 1
 ---
 
-<p>This website is very simple because it is important for me to just get something online. As these updates are made I’ll scratch them off this list. These aren’t in any particularorder; I’ll work on them as I feel motivated.</p>
+<p class="post-paragraph">This website is very simple because it is important for me to just get something online. As these updates are made I’ll scratch them off this list. These aren’t in any particularorder; I’ll work on them as I feel motivated.</p>
 
 <ul class="post-list">
     <li>Light/Dark mode</li>
