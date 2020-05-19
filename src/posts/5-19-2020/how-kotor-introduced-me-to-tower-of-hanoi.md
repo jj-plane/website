@@ -72,7 +72,7 @@ And we have our correct output. If you want to test it, I’d suggest using the 
 If 24 - 1 is 15, then the console should log 15 moves. 
 </p>
 
-![Modified output in terminal](./counterInTerminal.png)
+![Modified output in terminal](./counterInTerminal.PNG)
 
 <p class="post-paragraph">
 So we are solving in the most optimal amount of moves. 
