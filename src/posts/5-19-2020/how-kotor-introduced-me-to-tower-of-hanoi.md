@@ -60,10 +60,10 @@ Finally, we have to call this function and define our towers.
 If we run this using the Node command from the terminal, what does our output look like? 
 </p>
 
-![Terminal output](./terminalOutputZoomed.png)
+![Terminal output](./terminalOutputZoomed.PNG)
 
 <p class="post-paragraph">
-And we have our correct output. If you want to test it, I’d suggest using the [math is fun](https://www.mathsisfun.com/games/towerofhanoi.html) version. But how can we be sure this is optimal? According to wikipedia, the minimal number of moves required to solve is 2n-1. Let’s put a counter in our function. 
+And we have our correct output. If you want to test it, I’d suggest using the <a href="https://www.mathsisfun.com/games/towerofhanoi.html">Math Is Fun</a> version. But how can we be sure this is optimal? According to wikipedia, the minimal number of moves required to solve is 2n-1. Let’s put a counter in our function. 
 </p>
 
 ![Modifying function to add a counter](./movesCounter.png)
